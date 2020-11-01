@@ -1,0 +1,111 @@
+.chat {
+  flex: 0.7;
+  display: flex;
+  flex-direction: column;
+}
+.chat__header {
+  padding: 20px;
+  display: flex;
+  max-height: 18px;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid lightgray;
+}
+.chat__headerInfo {
+  flex: 1;
+  padding-left: 10px;
+}
+.chat__headerInfo > h4 {
+  font-weight: 450;
+  color: #424242;
+  margin-bottom: 2px;
+  width: 400px;
+}
+.chat__headerInfo > p {
+  color: gray;
+  font-size: 13px;
+  width: 400px;
+}
+.chat__headerRight {
+  display: flex;
+  justify-content: space-between;
+  max-width: 135px;
+}
+.chat__body {
+  overflow: auto;
+  flex: 1;
+  background-image: url("https://user-images.githubusercontent.com/15075759/28719144-86dc0f70-73b1-11e7-911d-60d70fcded21.png");
+  background-position: center;
+  background-attachment: repeat;
+  padding: 30px;
+}
+.chat__messages {
+  position: relative;
+  font-size: 16px;
+  padding: 10px;
+  background: #fff;
+  border-radius: 10px;
+  width: fit-content;
+  margin-bottom: 15px;
+  max-width: 500px;
+  display: flex;
+  word-wrap: break-word;
+  flex-direction: column;
+}
+
+.chat__reciever {
+  margin-left: auto;
+  background: #dcf8c6;
+}
+.chat__name {
+  display: block;
+  margin-bottom: 13px;
+  font-size: 15px;
+  font-weight: 700;
+  color: rgb(0, 99, 99);
+}
+.chat__timeStamp {
+  display: block;
+  font-size: 15px;
+  font-weight: 400;
+  margin-top: 6px;
+  font-size: 12px;
+  margin-left: auto;
+  color: rgb(173, 179, 179);
+}
+.chat__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 62px;
+  border-top: 1px solid lightgray;
+  margin-left: 7px;
+  max-width: 68.9vw;
+}
+.chat__footer > form {
+  flex: 1;
+  display: flex;
+  margin-left: 5px;
+}
+.chat__footer > form > input {
+  flex: 1;
+  border-radius: 30px;
+  padding: 13px;
+  font-size: 15px;
+  color: gray;
+  outline: none;
+  border: none;
+}
+.chat__footer > form > button {
+  flex: 0;
+  display: none;
+}
+.chat__footer > .MuiSvgIcon-root {
+  color: #999999;
+  padding: 10px;
+  font-size: 28px;
+}
+.chat__header > .MuiSvgIcon-root {
+  color: #999999;
+  font-size: 29px;
+}
